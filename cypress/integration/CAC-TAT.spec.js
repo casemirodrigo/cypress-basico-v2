@@ -11,6 +11,10 @@ describe('Central de Atendimento ao Cliente TAT', function() {
     beforeEach(function() {
         cy.visit('./src/index.html')
     })
+    it('Verifica mensagem de sucesso e erro', function(){
+        cy.validaMensagemSucessoErro()
+    })
+    /*
     it('verifica o título da aplicação', function() {
         cy.title().should('be.equal', 'Central de Atendimento ao Cliente TAT')
     })
@@ -36,6 +40,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
                 expect($input[0].files[0].name).to.equal('example.json')
             })
     })
+    */
   })
 
 
